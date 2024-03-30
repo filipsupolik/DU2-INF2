@@ -21,11 +21,15 @@ public abstract class Hero {
     }
 
     public void recieveAttack(double damage) {
-
+        this.healthPoints -= damage;
     }
 
     public boolean isAlive() {
-
+        boolean alive = true;
+        if (this.healthPoints <= 0) {
+            alive = false;
+        }
+        return alive;
     }
 
     protected void setHealthPoints() {

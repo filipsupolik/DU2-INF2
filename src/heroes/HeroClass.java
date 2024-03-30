@@ -10,6 +10,9 @@ public enum HeroClass {
     }
 
     public boolean isUndead() {
-
+        if (this == GHOUL || this == ZOMBIE) {
+            return true;
+        }
+        return false;
     }
 }

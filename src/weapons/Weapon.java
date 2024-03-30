@@ -12,7 +12,7 @@ public class Weapon {
     }
 
     public double computeAttackPower(Hero oponent) {
-
+        return 1;
     }
 
     public double getBaseAttackPower() {

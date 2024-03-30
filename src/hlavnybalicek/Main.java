@@ -38,10 +38,10 @@ public class Main {
         undeadUnit2.recruitHero(ghoul2);
         undeadUnit2.recruitHero(zombie2);
 
-        //TODO: dorobit vytvorenie areny a spustit duely
-        Arena arena1 = new Arena(humanUnit, undeadUnit, new FirstHeroSelector().pickHero());
-        Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector().pickHero());
+//        //TODO: dorobit vytvorenie areny a spustit duely
+        Arena arena1 = new Arena(humanUnit, undeadUnit, new FirstHeroSelector());
+//        Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector());
         arena1.performDuelsInUnit();
-        arena2.performDuelsInUnit();
+//        arena2.performDuelsInUnit();
     }
 }

@@ -6,6 +6,6 @@ import hlavnybalicek.HeroUnit;
 public class FirstHeroSelector implements HeroForDuelSelector {
     @Override
     public Hero pickHero(HeroUnit heroUnit) {
-        return null;
+        return heroUnit.getListOfHeroes().get(0);
     }
 }
