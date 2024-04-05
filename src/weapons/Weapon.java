@@ -7,12 +7,12 @@ public class Weapon {
     private WeaponType weaponType;
 
     public Weapon(double attackPower, WeaponType weaponType) {
-        baseAttackPower = attackPower;
+        this.baseAttackPower = attackPower;
         this.weaponType = weaponType;
     }
 
-    public double computeAttackPower(Hero oponent) {
-        return 1;
+    public double computeAttackPower(Hero opponent) {
+        return this.baseAttackPower;
     }
 
     public double getBaseAttackPower() {

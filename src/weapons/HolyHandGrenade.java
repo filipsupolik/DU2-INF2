@@ -9,6 +9,13 @@ public class HolyHandGrenade extends Weapon {
 
     @Override
     public double computeAttackPower(Hero opponent) {
-        return 0;
+        double utocnaSila;
+        if (opponent.getHeroClass().isUndead()) {
+            double zakladnaSila = this.getBaseAttackPower();
+            utocnaSila = zakladnaSila * 2;
+        } else {
+            utocnaSila = this.getBaseAttackPower();
+        }
+        return utocnaSila;
     }
 }

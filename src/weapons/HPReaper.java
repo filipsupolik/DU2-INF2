@@ -1,6 +1,7 @@
 package weapons;
 
 import heroes.Hero;
+import heroes.HeroClass;
 
 public class HPReaper extends Weapon {
     public HPReaper(double attackPower) {
@@ -9,6 +10,13 @@ public class HPReaper extends Weapon {
 
     @Override
     public double computeAttackPower(Hero oponent) {
-        return 2;
+        double utocnaSila;
+        if (oponent.getHeroClass() == HeroClass.WARRIOR) {
+            double zivotyProtivnika = oponent.getHealthPoints();
+            utocnaSila = zivotyProtivnika * 0.25;
+        } else {
+            utocnaSila = this.getBaseAttackPower();
+        }
+        return utocnaSila;
     }
 }

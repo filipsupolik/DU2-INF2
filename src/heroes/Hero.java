@@ -14,10 +14,10 @@ public abstract class Hero {
         this.heroClass = heroClass;
     }
 
-    protected abstract double computeAttackPower(Hero oponent);
+    protected abstract double computeAttackPower(Hero opponent);
 
     public void performAttack(Hero opponent) {
-
+        opponent.recieveAttack(this.attackPower);
     }
 
     public void recieveAttack(double damage) {
@@ -32,8 +32,8 @@ public abstract class Hero {
         return alive;
     }
 
-    protected void setHealthPoints() {
-
+    protected void setHealthPoints(double healthPoints) {
+        this.healthPoints = healthPoints;
     }
 
     public double getHealthPoints() {

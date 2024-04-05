@@ -6,11 +6,13 @@ public class Ghoul extends Hero {
     }
 
     @Override
-    protected double computeAttackPower(Hero oponent) {
-        return 0;
+    protected double computeAttackPower(Hero opponent) {
+        return this.getAttackPower();
     }
 
     public void recieveAttack(double attackPower) {
-
+        double zivoty = this.getHealthPoints();
+        zivoty -= attackPower;
+        this.setHealthPoints(zivoty);
     }
 }
