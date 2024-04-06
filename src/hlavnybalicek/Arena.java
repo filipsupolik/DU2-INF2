@@ -25,6 +25,7 @@ public class Arena {
             if (this.secondHero.isAlive()) {
                 this.secondHero.performAttack(this.firstHero);
                 if (!this.firstHero.isAlive()) {
+                    System.out.printf("Hero %s was killed by %s%n", this.firstHero.getName(), this.secondHero.getName());
                     this.heroUnit1.removeHero(this.firstHero);
                     this.firstHero = this.duelSelector.pickHero(heroUnit1);
                 }

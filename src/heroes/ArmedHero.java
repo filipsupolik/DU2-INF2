@@ -18,6 +18,7 @@ public class ArmedHero extends Hero {
         } else {
             celkovaUtocnaSila = this.getAttackPower();
         }
+
         return celkovaUtocnaSila;
     }
 

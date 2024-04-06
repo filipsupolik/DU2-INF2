@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36967f7f-35a7-4bac-b399-b34b1d64cc9b" name="Changes" comment="commit/01 - created classes from UML diagram">
+    <list default="true" id="36967f7f-35a7-4bac-b399-b34b1d64cc9b" name="Changes" comment="commit/02 - implemented first try for logic of the game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/ArmedHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/ArmedHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/Ghoul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Ghoul.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/Priest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/Priest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroselectors/WeakestHeroSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroselectors/WeakestHeroSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hlavnybalicek/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hlavnybalicek/Arena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weapons/HPReaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weapons/HPReaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weapons/HolyHandGrenade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weapons/HolyHandGrenade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weapons/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weapons/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,8 @@
       <workItem from="1711797501752" duration="6737000" />
       <workItem from="1712048575234" duration="3376000" />
       <workItem from="1712052064127" duration="4000" />
-      <workItem from="1712349255341" duration="2890000" />
+      <workItem from="1712349255341" duration="2911000" />
+      <workItem from="1712389175481" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="commit/01 - created classes from UML diagram">
       <created>1711708029123</created>
@@ -85,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711708128471</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit/02 - implemented first try for logic of the game">
+      <created>1712352177886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712352177886</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,47 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit/01 - created classes from UML diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit/01 - created classes from UML diagram" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hlavnybalicek/Arena.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="commit/02 - implemented first try for logic of the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit/02 - implemented first try for logic of the game" />
   </component>
 </project>

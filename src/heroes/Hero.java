@@ -18,6 +18,7 @@ public abstract class Hero {
 
     public void performAttack(Hero opponent) {
         opponent.recieveAttack(this.attackPower);
+        System.out.printf("Hero %s attacked hero %s and dealt %.2f damage and leaving him %.2f.%n", this.name, opponent.name, this.attackPower, opponent.getHealthPoints());
     }
 
     public void recieveAttack(double damage) {
