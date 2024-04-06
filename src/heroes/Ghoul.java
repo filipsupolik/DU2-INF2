@@ -1,8 +1,11 @@
 package heroes;
 
 public class Ghoul extends Hero {
+    private boolean ozivenie;
+
     public Ghoul(double healthPoints, double attackPower, String name) {
         super(healthPoints, attackPower, name, HeroClass.GHOUL);
+        this.ozivenie = false;
     }
 
     @Override
@@ -11,8 +14,12 @@ public class Ghoul extends Hero {
     }
 
     public void recieveAttack(double attackPower) {
-        double zivoty = this.getHealthPoints();
-        zivoty -= attackPower;
-        this.setHealthPoints(zivoty);
+        double zivotyPredOzivenim = this.getHealthPoints();
+        super.recieveAttack(attackPower);
+        if (!this.isAlive() && !this.ozivenie) {
+            this.setHealthPoints(zivotyPredOzivenim * 0.9);
+            this.ozivenie = true;
+            System.out.printf("%s was ressurected with %.2f HP!%n", this.getName(), this.getHealthPoints());
+        }
     }
 }

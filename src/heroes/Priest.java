@@ -13,7 +13,7 @@ public class Priest extends ArmedHero {
         double utocnaSila;
         if (this.getWeapon().getWeaponType() == WeaponType.STAFF) {
             double sila = this.getAttackPower();
-            utocnaSila = sila * 10;
+            utocnaSila = sila * this.getWeapon().getBaseAttackPower() *  10;
         } else {
             utocnaSila = this.getAttackPower();
         }

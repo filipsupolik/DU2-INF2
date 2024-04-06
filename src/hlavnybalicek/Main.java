@@ -23,6 +23,7 @@ public class Main {
         Priest priest = new Priest(45, 3, "Priest Stano", new Weapon(1, WeaponType.STAFF), HeroClass.PRIEST);
         Priest priest2 = new Priest(40, 2, "Priest Marian", new Weapon(2, WeaponType.STAFF), HeroClass.PRIEST);
 
+
         Ghoul ghoul1 = new Ghoul(45, 40, "Ghoul Soul Reaper");
         Ghoul ghoul2 = new Ghoul(40, 30, "Ghoul Life Reaper");
         ArmedHero zombie1 = new ArmedHero(40, 2.5, "Small Zombie", new HPReaper(3), HeroClass.ZOMBIE);
@@ -38,10 +39,10 @@ public class Main {
         undeadUnit2.recruitHero(ghoul2);
         undeadUnit2.recruitHero(zombie2);
 
-//        //TODO: dorobit vytvorenie areny a spustit duely
+        //TODO: dorobit vytvorenie areny a spustit duely
         Arena arena1 = new Arena(humanUnit, undeadUnit, new FirstHeroSelector());
-//        Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector());
+        Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector());
         arena1.performDuelsInUnit();
-//        arena2.performDuelsInUnit();
+        arena2.performDuelsInUnit();
     }
 }

@@ -12,14 +12,11 @@ public class ArmedHero extends Hero {
 
     @Override
     protected double computeAttackPower(Hero opponent) {
-        double celkovaUtocnaSila;
         if (this.weapon != null) {
-            celkovaUtocnaSila = this.getAttackPower() * this.weapon.getBaseAttackPower();
+            return this.getAttackPower() * this.weapon.computeAttackPower(opponent);
         } else {
-            celkovaUtocnaSila = this.getAttackPower();
+            return this.getAttackPower();
         }
-
-        return celkovaUtocnaSila;
     }
 
     public Weapon getWeapon() {
